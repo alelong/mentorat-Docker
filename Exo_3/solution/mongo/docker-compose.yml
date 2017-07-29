@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+  database:
+    image: amaris/mongo:latest
+    build:
+      context: .
+
+    container_name: mongoAmaris
+
+    # Keep the stdin open, so we can attach to our app container's process
+    # and do things such as debugging, etc:
+    stdin_open: true
+
+    # Enable sending signals (CTRL+C, CTRL+P + CTRL+Q) into the container:
+    tty: true
+
+    ports:
+      - "27017:27017"
