@@ -4,3 +4,7 @@ $docker run --name container-nginx -p 80:80 -d -v `pwd`:/usr/share/nginx/html ng
 Exercice 2:
 $docker build -t mynginximage:0.1 .
 $docker run --name container-nginx -p 80:80 -d mynginximage:0.1
+
+Exercice 3:
+$docker tag agathe/mynginximage:0.1 alelong/mentoratdocker:nginx
+$docker-compose bundle --push-images
