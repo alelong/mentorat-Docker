@@ -1,0 +1,9 @@
+version: "2"
+services:
+ nodeserver:
+  build: .
+  image: alelong/mentoratdocker:node
+  ports:
+  - "8000:8000"
+  #volumes:
+  #- .:/js	

@@ -1,0 +1,17 @@
+{
+  "Services": {
+    "database": {
+      "Image": "alelong/mentoratdocker@sha256:d836a98110a0307f17ac27043ea08f56a72d111d7036de1f112c6a438a397552", 
+      "Networks": [
+        "default"
+      ], 
+      "Ports": [
+        {
+          "Port": 27017, 
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  }, 
+  "Version": "0.1"
+}

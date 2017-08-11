@@ -1,0 +1,17 @@
+{
+  "Services": {
+    "nodeserver": {
+      "Image": "alelong/mentoratdocker@sha256:0fef9d5b2f5b8e9d81f388cc30a56b5071f771cdbd324e2a7817d283206964fe", 
+      "Networks": [
+        "default"
+      ], 
+      "Ports": [
+        {
+          "Port": 8000, 
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  }, 
+  "Version": "0.1"
+}
