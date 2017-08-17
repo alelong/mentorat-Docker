@@ -4,6 +4,6 @@ services:
   build: .
   image: alelong/mentoratdocker:node
   ports:
-  - "8000:8000"
-  #volumes:
-  #- .:/js	
+   - "8000:8000"
+  volumes:
+   - .:/js

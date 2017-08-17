@@ -5,5 +5,5 @@ services:
   image: alelong/mentoratdocker:nginx
   ports:
    - "80:80"
-  #volumes:
-  #- .:/usr/share/nginx/html	
+  volumes:
+   - .:/usr/share/nginx/html
